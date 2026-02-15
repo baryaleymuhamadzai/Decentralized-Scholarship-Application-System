@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+
+<input type="text" id="adminAddress" placeholder="Admin Wallet Address"><br><br>
+
+<button onclick="loadApplications()">Load Applications</button>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Application ID</th>
+      <th>Student Address</th>
+      <th>Name</th>
+      <th>CGPA</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="applicationsTable"></tbody>
+</table>
+
+ <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+<script src="abi.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

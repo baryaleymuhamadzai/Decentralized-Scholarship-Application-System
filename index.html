@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scholarship Application</title>
+</head>
+<body>
+
+<h2>Student Scholarship Application</h2>
+
+<input type="text" id="studentAddress" placeholder="Your Wallet Address"><br><br>
+<input type="text" id="name" placeholder="Student Name"><br><br>
+<input type="text" id="regNo" placeholder="Registration Number"><br><br>
+<input type="text" id="cgpa" placeholder="CGPA"><br><br>
+<input type="text" id="docHash" placeholder="Document Hash"><br><br>
+
+<button onclick="submitApplication()">Submit Application</button>
+
+<h3>Check Application Status</h3>
+<input type="number" id="appId" placeholder="Application ID">
+<button onclick="checkStatus()">Check Status</button>
+
+<p id="result"></p>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+<script src="abi.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
